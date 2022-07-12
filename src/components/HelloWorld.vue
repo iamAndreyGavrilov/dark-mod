@@ -28,7 +28,7 @@ const count = ref(0);
       @click="toggleDark()"
       class="px-4 py-2 text-white bg-green-500 rounded dark:bg-purple-500"
     >
-      dark theme
+      Dark theme
     </button>
   </div>
 </template>
