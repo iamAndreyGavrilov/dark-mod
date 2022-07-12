@@ -13,12 +13,24 @@ const count = ref(0);
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <div>
+    <button
+      class="px-4 py-2 text-white bg-green-500 rounded dark:bg-purple-500"
+      type="button"
+      @click="count++"
+    >
+      count is: {{ count }}
+    </button>
+  </div>
 
-  <button type="button" @click="count++">count is: {{ count }}</button>
-
-  <p>isDark: {{ isDark }}</p>
-  <button @click="toggleDark()">toggle</button>
+  <div class="my-5">
+    <button
+      @click="toggleDark()"
+      class="px-4 py-2 text-white bg-green-500 rounded dark:bg-purple-500"
+    >
+      dark theme
+    </button>
+  </div>
 </template>
 
 <style scoped>
